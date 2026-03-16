@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Shield, Home, Clock, DollarSign, Zap, ArrowRight } from "lucide-react";
+import electricianImg from "@/assets/electrician-panel.jpg";
+import wiringImg from "@/assets/electrical-wiring.jpg";
 
 const trustBadges = [
   { icon: Shield, label: "Licensed & Insured" },
