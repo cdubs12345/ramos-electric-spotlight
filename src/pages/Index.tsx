@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Shield, Home, Clock, DollarSign, Zap, ArrowRight } from "lucide-react";
+import electricianImg from "@/assets/electrician-panel.jpg";
+import wiringImg from "@/assets/electrical-wiring.jpg";
 
 const trustBadges = [
   { icon: Shield, label: "Licensed & Insured" },
@@ -67,21 +69,34 @@ const Index = () => {
 
       {/* Why Choose Joe */}
       <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h2 className="font-heading font-black text-3xl md:text-4xl text-foreground mb-6">
-            Why Choose Joe?
-          </h2>
-          <div className="w-16 h-1 bg-secondary mx-auto mb-8 rounded-full" />
-          <p className="text-muted-foreground text-lg leading-relaxed">
-            Ramos Electric is a family-owned business right here in Bethlehem, PA. Joe Ramos brings years of hands-on electrical experience to every job — big or small. He takes the time to explain the process step by step so you always know what's happening and why. Known for being on time, professional, and reasonably priced, Joe has built a reputation across the Lehigh Valley for honest, quality electrical work you can trust.
-          </p>
-          <Link
-            to="/services"
-            className="inline-flex items-center gap-2 mt-8 font-heading font-bold text-secondary hover:text-yellow-light transition-colors"
-          >
-            View Our Services <ArrowRight className="w-4 h-4" />
-          </Link>
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img src={electricianImg} alt="Professional electrician working on panel" className="w-full h-auto object-cover" />
+            </div>
+            <div>
+              <h2 className="font-heading font-black text-3xl md:text-4xl text-foreground mb-6">
+                Why Choose Joe?
+              </h2>
+              <div className="w-16 h-1 bg-secondary mb-8 rounded-full" />
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Ramos Electric is a family-owned business right here in Bethlehem, PA. Joe Ramos brings years of hands-on electrical experience to every job — big or small. He takes the time to explain the process step by step so you always know what's happening and why. Known for being on time, professional, and reasonably priced, Joe has built a reputation across the Lehigh Valley for honest, quality electrical work you can trust.
+              </p>
+              <Link
+                to="/services"
+                className="inline-flex items-center gap-2 mt-8 font-heading font-bold text-secondary hover:text-yellow-light transition-colors"
+              >
+                View Our Services <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
         </div>
+      </section>
+
+      {/* Wiring Image Banner */}
+      <section className="relative h-48 md:h-64 overflow-hidden">
+        <img src={wiringImg} alt="Professional electrical wiring" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-primary/60" />
       </section>
 
       {/* CTA */}
