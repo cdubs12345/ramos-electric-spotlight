@@ -18,9 +18,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-primary shadow-lg">
       <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-secondary font-heading font-black text-xl md:text-2xl tracking-tight">
-            RAMOS ELECTRIC
-          </span>
+          <img src={logo} alt="Ramos Electric" className="h-10 md:h-12 w-auto" />
         </Link>
 
         {/* Desktop nav */}
