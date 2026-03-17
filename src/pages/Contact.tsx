@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, MapPin, Clock, Send } from "lucide-react";
+import { Phone, MapPin, Clock, Send, Mail } from "lucide-react";
 import { toast } from "sonner";
 
 const jobTypes = [
@@ -130,6 +130,15 @@ const Contact = () => {
                     <h3 className="font-heading font-bold text-foreground">Phone</h3>
                     <a href="tel:6109548195" className="text-muted-foreground hover:text-secondary transition-colors">
                       (610) 954-8195
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Mail className="w-5 h-5 text-secondary mt-1" />
+                  <div>
+                    <h3 className="font-heading font-bold text-foreground">Email</h3>
+                    <a href="mailto:info@Ramos-Electric.com" className="text-muted-foreground hover:text-secondary transition-colors">
+                      info@Ramos-Electric.com
                     </a>
                   </div>
                 </div>
