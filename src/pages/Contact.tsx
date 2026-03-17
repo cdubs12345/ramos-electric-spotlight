@@ -142,6 +142,7 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
+                <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-secondary mt-1" />
                   <div>
                     <h3 className="font-heading font-bold text-foreground">Address</h3>
