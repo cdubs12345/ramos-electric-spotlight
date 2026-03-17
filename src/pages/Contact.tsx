@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, MapPin, Clock, Send } from "lucide-react";
+import { Phone, MapPin, Clock, Send, Mail } from "lucide-react";
 import { toast } from "sonner";
 
 const jobTypes = [
