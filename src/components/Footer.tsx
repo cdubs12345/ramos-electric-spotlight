@@ -23,6 +23,10 @@ const Footer = () => {
                 <MapPin className="w-4 h-4 text-secondary mt-0.5" />
                 722 Wyandotte St, Bethlehem, PA 18015
               </div>
+              <a href="mailto:info@Ramos-Electric.com" className="flex items-center gap-2 hover:text-secondary transition-colors">
+                <Mail className="w-4 h-4 text-secondary" />
+                info@Ramos-Electric.com
+              </a>
             </div>
           </div>
 

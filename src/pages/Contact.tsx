@@ -134,6 +134,14 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
+                  <Mail className="w-5 h-5 text-secondary mt-1" />
+                  <div>
+                    <h3 className="font-heading font-bold text-foreground">Email</h3>
+                    <a href="mailto:info@Ramos-Electric.com" className="text-muted-foreground hover:text-secondary transition-colors">
+                      info@Ramos-Electric.com
+                    </a>
+                  </div>
+                </div>
                   <MapPin className="w-5 h-5 text-secondary mt-1" />
                   <div>
                     <h3 className="font-heading font-bold text-foreground">Address</h3>
